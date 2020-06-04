@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+}
+
+#categories {
+  background-color: #f3ecec;
+}
+
+#gallery {
+  background-color: #f3ecec;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#gallery img {
+  width: 320px;
+}
+
+#counter {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  transform: translateX(50%);
+}
