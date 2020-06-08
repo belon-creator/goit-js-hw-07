@@ -13,20 +13,8 @@ const box = {
   width: 30,
   height: 30,
   randomColor() {
-    let o = Math.round,
-      r = Math.random,
-      s = 255;
-    return (
-      'rgba(' +
-      o(r() * s) +
-      ',' +
-      o(r() * s) +
-      ',' +
-      o(r() * s) +
-      ',' +
-      r().toFixed(1) +
-      ')'
-    );
+    const color = Math.floor(Math.random() * 16777216).toString(16);
+    return '#000000'.slice(0, -color.length) + color;
   },
 };
 
@@ -48,7 +36,6 @@ function createBoxes(amount) {
 }
 
 function destroyBoxes() {
-  const clearContainer = '<div id="boxes"></div>';
-  container.innerHTML = clearContainer;
+  container.innerHTML = '';
   console.log('Поле очищено!');
 }
