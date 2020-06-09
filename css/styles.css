@@ -20,7 +20,6 @@ body {
 #counter {
   margin-top: 40px;
   margin-bottom: 40px;
-  transform: translateX(50%);
 }
 
 #validation-input {
